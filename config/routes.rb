@@ -1,4 +1,6 @@
 StaticPage::Application.routes.draw do
+  get "nagesh/test"
+
   get "page/mytest"
 
   get "pages/home"
