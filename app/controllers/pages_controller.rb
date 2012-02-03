@@ -1,10 +1,11 @@
 class PagesController < ApplicationController
   def home
+  @title="Instalnce variable"
   end
 
   def contact
   end
 
-  def abou
+  def about
   end
 end
