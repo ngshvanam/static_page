@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def home
-  @title="Instalnce variable_home"
+
   end
   
   def contact
