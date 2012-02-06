@@ -1,4 +1,6 @@
 StaticPage::Application.routes.draw do
+  get "user/new"
+
   get "nagesh/test"
 
   get "nagesh/test1"
@@ -8,6 +10,14 @@ StaticPage::Application.routes.draw do
   get "pages/home"
 
   get "pages/contact"
+
+  match '/signup',  :to => 'user#new'
+
+  match '/contact', :to => 'pages#contact'
+  match '/about',   :to => 'pages#about'
+  match '/help',    :to => 'pages#help'
+
+  match '/home',     :to => 'pages#home'
 
   get "pages/about"
   # The priority is based upon order of creation:
