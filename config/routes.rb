@@ -1,4 +1,6 @@
 StaticPage::Application.routes.draw do
+  get "users/new"
+
   get "user/new"
 
   get "nagesh/test"
